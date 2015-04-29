@@ -14,6 +14,8 @@ var multer=require('multer');
 var flash =require('connect-flash');
 
 var routes = require('./routes/index');
+var posts = require('./routes/posts');
+var categories = require('./routes/categories');
 var users = require('./routes/users');
 
 var app = express();
@@ -78,7 +80,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-
+app.use('/posts', posts);
+app.use('/categories', categories);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
