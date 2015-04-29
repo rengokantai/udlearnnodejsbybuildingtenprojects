@@ -73,3 +73,18 @@ nav a.current, nav a:hover{
   background: #342a32;
 
 }
+
+.meta{
+  padding: 7px;
+  border: 1px solid gray;
+  background: #cccccc;
+  
+}
+
+
+a.more{
+  display: inline-block;
+  background: #404137;
+  color: #ffffff;
+  padding: 10px;
+}
