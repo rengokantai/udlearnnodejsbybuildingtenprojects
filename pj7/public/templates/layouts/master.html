@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{+title/}</title>
+    <link rel="stylesheet" href="../../../css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.css"/>
+    <link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+<div class="row">
+    <div class="large-12 columns">
+        <h1>tekbook</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <nav class="top-bar" date-topbar role="navigation">
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pages/about">About</a></li>
+                    <li><a href="/cart">Cart</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="large-12 columns">
+        {+body/}
+    </div>
+</div>
+
+<footer>
+    <div class="row">
+        <div class="large-12 columns">
+            <p>&copy; 2015|<a href="/manage">Manage</a></p>
+        </div>
+    </div>
+</footer>
+<script data-main="/js/app" src="../../../node_modules/requirejs/require.js"></script>
+<script src="../../../node_modules/foundation/js/vendor/jquery.js"></script>
+<script src="../../../node_modules/foundation/js/foundation/foundation.js"></script>
+<script src="main.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>
